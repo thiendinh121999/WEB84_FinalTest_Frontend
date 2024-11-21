@@ -1,0 +1,77 @@
+.header-wrap {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /*Căn theo trục flex chính*/
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+    height: 50px;
+    background-color: white;
+}
+
+.header-item-group {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-text{
+    font-size: 20px;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.logo{
+    height: 30px;
+}
+
+#login{
+    height: fit-content;
+    border-radius: 7px;
+    box-sizing: content-box;
+    padding: 15px 5px 15px 5px;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color:#f84258;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover#login {
+    background-color: red;
+    color: white;
+}
+
+.sidebar-wrap{
+    background-color: white;
+    display: block;
+    width: 10%;
+    padding: 5px 0px 5px 20px;
+}
+.sidebar-item-wrap{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    padding: 2px 2px 2px 2px;
+    gap: 3px;
+    justify-content:left;
+    align-items: center;
+    font-size: 12px;
+    gap: 10px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+a:hover.sidebar-item-wrap{
+    background-color: rgb(133, 7, 252);
+    opacity: 50%;
+    font-weight: bold;
+    color: white;
+}
+
+.sidebar-icon {
+    height: 10px;
+}

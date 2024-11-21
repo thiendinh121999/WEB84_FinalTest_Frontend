@@ -1,0 +1,210 @@
+.page-wrap {
+    background-color: rgb(196, 196, 196);
+    display:block;
+  }
+
+.sidebar-content-wrap {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.content-wrap {
+    width:90%;
+    background-color: rgb(184, 184, 184);
+    padding: 5px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.text {
+    text-align: left;
+    color: black;
+    font-size: 15px;
+}
+
+.list-wrap {
+    height: 80%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px 10px 5px;
+}
+
+.list-header {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    background-color: rgb(214, 177, 248);
+    color: black;
+    padding-left: 5px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+.code-clm {
+    width: 10%;
+}
+
+.teacher-clm{
+    width: 20%;
+}
+
+.qualify-clm {
+    width: 20%;
+}
+
+.subject-clm {
+    width: 5%;
+}
+
+.position-clm{
+    width: 10%;
+}
+
+.adress-clm{
+    width: 10%;
+}
+
+.status-clm {
+    width: 10%;
+}
+
+.action-clm{
+    width: 7%;
+}
+
+.list-content-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+    overflow-y: overlay;
+    gap: 10px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+    font-size: 10px;
+    height: 600px;
+}
+
+.list-item-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    color: black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+.teacher-name{
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.subinfo{
+    font-style: italic;
+    font-size: 9px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.teacher-avt{
+    height: 35px;
+}
+
+.teacher-content-wrap{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.info{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.list-controller{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 98%;
+    margin-bottom: 5px;
+    gap: 5px;
+}
+.searchbar {
+    width: 15%;
+    height: 30px;
+    box-sizing: border-box;
+    border: 2px solid #d4d4d4;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    padding: 0 5px 0px 5px;
+    align-items: center;
+}
+
+input {
+    outline: none;
+}
+
+.search-input {
+    color: rgb(44, 43, 43);
+    height: 100%;
+    width:80%;
+    font-size: 18px;
+    font-family: 'Pangea Afrikan Trial Medium';
+}
+
+.search-input > input {
+    background-color: transparent;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    border: 0px;
+    font-family: 'Pangea Afrikan Trial Medium';
+}
+
+.search-icon img {
+    height: 20px;
+}
+
+.list-controller-btn{
+    background-color: white;
+    border: 1px solid rgb(66, 61, 61);
+    padding: 2px 3px 2px 3px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.list-controller-btn:hover {
+    background-color: gold;
+}
+.btn-icon{
+    height: 15px;
+    margin-right: 2px;
+}
+.detail-btn{
+    font-size: 10px;
+}
+.detail-btn-icon{
+    height:10px;
+    margin-right: 2px;
+}

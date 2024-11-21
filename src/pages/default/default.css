@@ -1,0 +1,25 @@
+.page-wrap {
+    background-color: rgb(196, 196, 196);
+    display:block;
+  }
+
+.sidebar-content-wrap {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.content-wrap {
+    width:90%;
+    background-color: rgb(184, 184, 184);
+}
+
+.default-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    text-align: center;
+    color: gray;
+    font-size: 30px;
+}

@@ -1,0 +1,110 @@
+.page-wrap {
+    background-color: rgb(196, 196, 196);
+    display:block;
+  }
+
+.sidebar-content-wrap {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.content-wrap {
+    width:90%;
+    background-color: rgb(184, 184, 184);
+    padding: 5px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.text {
+    text-align: left;
+    color: black;
+    font-size: 15px;
+}
+
+.list-wrap {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px 10px 5px;
+}
+
+.list-header {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    background-color: rgb(214, 177, 248);
+    color: black;
+    padding-left: 5px;
+    padding-right: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+.code-clm {
+    width: 5%;
+}
+
+.stt-clm{
+    width: 5%;
+}
+
+.name-clm {
+    width: 30%;
+}
+
+
+.status-clm {
+    width: 20%;
+}
+
+.descript-clm{
+    width: 40%;
+}
+
+.list-content-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 98%;
+    overflow-y: overlay;
+    gap: 10px;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 5px;
+    font-size: 10px;
+    height: 600px;
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+.list-item-wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    color: black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.detail-btn{
+    width:5%;
+}
+.detail-btn-icon{
+    height:10px;
+    margin-right: 2px;
+}
