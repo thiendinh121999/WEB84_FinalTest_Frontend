@@ -52,34 +52,65 @@
 
 .code-clm {
     width: 10%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .teacher-clm{
     width: 20%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .qualify-clm {
     width: 20%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .subject-clm {
     width: 5%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .position-clm{
     width: 10%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .adress-clm{
     width: 10%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .status-clm {
     width: 10%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.status-text {
+    padding: 5px;
+    background-color: rgb(3, 173, 3);
+    color: white;
+    width:fit-content !important
 }
 
 .action-clm{
     width: 7%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .list-content-wrap{
@@ -185,17 +216,20 @@ input {
     height: 20px;
 }
 
-.list-controller-btn{
-    background-color: white;
-    border: 1px solid rgb(66, 61, 61);
-    padding: 2px 3px 2px 3px;
-    font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
+.list-controller-btn {
+    background-color: white !important;
+    border: 1px solid rgb(66, 61, 61) !important;
+    padding: 2px 3px 2px 3px !important;
+    font-size: 15px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    color: black !important;
+    height: fit-content !important;
 }
 
 .list-controller-btn:hover {
-    background-color: gold;
+    background-color: gold !important;
+    color: black !important;
 }
 .btn-icon{
     height: 15px;
@@ -203,8 +237,126 @@ input {
 }
 .detail-btn{
     font-size: 10px;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 10px !important;
+    width: fit-content !important;
 }
 .detail-btn-icon{
-    height:10px;
-    margin-right: 2px;
+    
+    height:10px !important;
+    margin-right: 2px !important;
 }
+
+.create-teacher-content-wrap{
+    display:flex !important;
+    flex-direction: column;
+    overflow-y: overlay !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    gap: 20px;
+    width: 90%;
+}
+
+.create-teacher-upper-wrap {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.avatar-upload-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 30%;
+    gap: 5px;
+}
+
+.create-teacher-ava{
+    height: 170px;
+}
+
+.ava-upload-btn{
+    box-sizing: content-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid grey;
+    cursor: pointer;
+}
+
+.ava-upload-icon{
+    height: 20px;
+}
+
+.person-info-wrap{
+    display: flex;
+    flex-direction: column;
+    width: fill;   
+
+}
+
+.form-title{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-decoration:wavy;
+    position: relative;
+}
+.form-title-text{
+    position: relative;
+    z-index: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+    margin-left: 5%;
+}
+
+.line-through-line {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    border-top: 3px solid purple; /* Adjust color and thickness as needed */
+    transform: translateY(-50%);
+  }
+
+.form-wrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-gap: 17px; /* Spacing between elements */
+}
+.form-item{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrap-position{
+    display: grid;
+    grid-template-columns: 1fr; /* Two columns */
+    grid-gap: 17px; /* Spacing between elements */
+}
+
+.save-btn{
+    width: 5%;
+    margin-top: 20px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    height: 20px;
+}
+

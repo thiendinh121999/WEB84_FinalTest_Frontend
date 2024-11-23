@@ -51,24 +51,46 @@
 }
 
 .code-clm {
-    width: 5%;
+    width: 10%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .stt-clm{
     width: 5%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .name-clm {
-    width: 30%;
+    width: 25%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 
 .status-clm {
     width: 20%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.status-text {
+    padding: 5px;
+    background-color: rgb(3, 173, 3);
+    color: white;
+    width:fit-content !important
 }
 
 .descript-clm{
     width: 40%;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
 }
 
 .list-content-wrap{
@@ -107,4 +129,33 @@
 .detail-btn-icon{
     height:10px;
     margin-right: 2px;
+}
+
+.position-form-wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.form-item{
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrap-position{
+    display: grid;
+    grid-template-columns: 1fr; /* Two columns */
+    grid-gap: 17px; /* Spacing between elements */
+}
+
+.save-btn{
+    width: fit-content;
+    margin-top: 20px;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    height: 20px;
 }

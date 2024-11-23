@@ -12,9 +12,9 @@ const HeaderBar = () => {
                     SCHOOL SYSTEM
                 </div>
             </div>
-            <Link to="/login" id="login">
+            {/*<Link to="/login" id="login">
               ĐĂNG NHẬP
-            </Link>
+            </Link>*/}
         </div>
     )
 }
