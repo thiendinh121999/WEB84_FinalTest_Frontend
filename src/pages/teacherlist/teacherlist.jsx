@@ -40,11 +40,13 @@ const TeacherListPage = () => {
      }); 
         console.log(response.data);
         setTeacherList(response.data.data);
-        setTotalPages(Math.ceil(response.data.data.length / pageSize));
+        setTotalPages(response.data.total);
         } catch (error) {
       console.error(error);}
     };
+
     console.log("totalPages=",totalPages)
+    
     useEffect(() => {
         fetchTeachers()
       }, [currentPage, pageSize]);
@@ -56,11 +58,14 @@ const TeacherListPage = () => {
       };
     
     {/*Pagination*/}
-      const handlePageChange = (page, pageSize) => {
-        setCurrentPage(page);
-        setPageSize(pageSize);
-      };
 
+    const handlePageChange = (page, pageSize) => {
+            setCurrentPage(page);
+            setPageSize(pageSize);
+          };
+      
+    
+    
     
     const startIndex = (currentPage - 1) * pageSize;
     const endIndex = Math.min(startIndex + pageSize, teacherList.length);
@@ -106,6 +111,8 @@ const TeacherListPage = () => {
     useEffect(() => {
         fetchPositions()
       }, []);
+    
+    
 
     console.log("positionList",positionList)
 
@@ -120,7 +127,7 @@ const TeacherListPage = () => {
         const email = document.getElementById('email').value;
         const identity = document.getElementById('identity').value;
         const address = document.getElementById('address').value;
-        const teacherPositionsId = ['670b306f6dce2acd384c6c77'];
+        const teacherPositionsId = '670b2ded6dce2acd384c6c5f';
         const isDeleted= false;
         const role= "TEACHER";
         const userId = "670df3b6ccc16cc87ce2b86f";
@@ -182,11 +189,10 @@ const TeacherListPage = () => {
                         {/*Pagegination here*/}
                         <Pagination
                             current={currentPage}
-                            total={totalPages}
+                            total= {totalPages}
                             pageSize={pageSize}
                             onChange={handlePageChange}
                             showSizeChanger
-                            showQuickJumper 
                         />
                         <div className="searchbar">
                             <div className="search-icon">
